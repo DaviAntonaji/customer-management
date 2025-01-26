@@ -1,6 +1,9 @@
+name: "Relase Application"
+
 on:
   push:
-    tags: ["*"]
+    branches:
+      - main
 
 jobs:
   release:

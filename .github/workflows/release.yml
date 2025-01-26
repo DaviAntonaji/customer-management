@@ -28,7 +28,7 @@ jobs:
       - name: autoremove
         if: startsWith(matrix.os, 'debian-latest')
         run: sudo apt autoremove
-        
+
       - name: Install system dependencies
         if: startsWith(matrix.os, 'debian-latest')
         run: sudo apt-get install -y build-essential python3 gcc g++ make libarchive-tools rpm
@@ -38,4 +38,3 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           release: true
-          args: --linux deb

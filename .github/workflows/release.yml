@@ -55,3 +55,6 @@ jobs:
           github_token: ${{ secrets.github_token }}
           release: true
           args: --win
+
+
+          

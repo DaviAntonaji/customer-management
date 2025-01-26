@@ -24,7 +24,7 @@ jobs:
         run: sudo apt autoremove -y
 
       - name: Install libarchive rpm on Linux
-        run: sudo apt-get install -y libarchive-tools rp
+        run: sudo apt-get install -y libarchive-tools rpm
 
       - name: Release Electron app
         uses: samuelmeuli/action-electron-builder@v1

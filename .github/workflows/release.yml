@@ -18,13 +18,13 @@ jobs:
           node-version: 20
 
       - name: apt-update
-        run: sudo apt-get update
-
+        run: sudo apt-get update -y
+ 
       - name: autoremove
-        run: sudo apt autoremove
+        run: sudo apt autoremove -y
 
       - name: Install libarchive rpm on Linux
-        run: sudo apt-get install libarchive-tools rp
+        run: sudo apt-get install -y libarchive-tools rp
 
       - name: Release Electron app
         uses: samuelmeuli/action-electron-builder@v1
